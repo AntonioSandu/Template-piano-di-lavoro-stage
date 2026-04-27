@@ -43,52 +43,54 @@
      % Personalizzare indicando in lista, i vari task settimana per settimana
      % sostituire a XX il totale ore della settimana
     \begin{itemize}
-        \item \textbf{Prima Settimana (32 ore)}
+        \item \textbf{Prima Settimana - Discussione requisiti e Ripasso teorico (32 ore)}
         \begin{itemize}
-            \item Incontro con persone coinvolte nel progetto per discutere i requisiti e le richieste
-            relativamente al sistema da sviluppare;
-            \item Formazione autonoma sui framework front-end moderni;
+            \item Incontro con persone coinvolte nel progetto per discutere 
+            i requisiti e le richieste relativamente al progetto da sviluppare;
+            \item Ripasso Java Standard Edition e tool di sviluppo (IDE, StopLight);
+            \item Ripasso principi della buona programmazione (SOLID, CleanCode);
+            \item Studio teorico dell'architettura a microservizi: passaggio da monolite 
+            ad architetture a microservizi con pro e contro (Api Gateway, Service
+            Discovery e Service Registry, Circuit Breaker e Saga);
         \end{itemize}
-        \item \textbf{Seconda Settimana - Formazione (40 ore)} 
+        \item \textbf{Seconda Settimana - Autoformazione Backend (40 ore)} 
         \begin{itemize}
-            \item Continuazione e conclusione della formazione sui framework front-end;
-            \item Inizio attività di analisi dei requisiti;
-            \item Allineamento con il tutor aziendale sui risultati raggiunti fino a questo punto;
+            \item Studio Spring Core/Spring Boot;
+            \item Studio ORM, in particolare il framework Spring Data JPA;
+            \item Studio servizi REST e framework spring Data REST;
+            \item Realizzazione mini prototipo di progetto SpringBoot con endpoint REST;
         \end{itemize}
-        \item \textbf{Terza Settimana - Analisi dei Requisiti (40 ore)} 
+        \item \textbf{Terza Settimana - Autoformazione Frontend (40 ore)} 
         \begin{itemize}
-            \item Continuazione attività di analisi dei requisiti;
-            \item Inizio stesura documentazione relativa ad analisi dei requisiti;
+            \item Ripasso linguaggio Javascript;
+            \item Studio del linguaggio TypeScript;
+            \item Studio piattaforma NodeJS e AngularCLI;
+            \item Studio framework Angular;
+            \item Implementazione di un mini prototipo di una maschera in Angular con 
+            5 campi generici di input con chiamata al back-end tramite un service dedicato;
         \end{itemize}
-        \item \textbf{Quarta Settimana - Progettazione (40 ore)} 
+        \item \textbf{Quarta Settimana - Progettazione architetturale (40 ore)} 
         \begin{itemize}
-            \item Completamento stesura del documento di Analisi dei Requisiti;
-            \item Inizio attività di progettazione;
-            \item Validazione con il tutor aziendale dei risultati raggiunti fino a questo punto;
+            \item Progettazione architetturale ed entità del progetto da realizzare;
+            \item Sviluppo e test API REST del back-end dei servizi per le CRUD di gestione utenti e partite;
         \end{itemize}
-        \item \textbf{Quinta Settimana - Progettazione nel dettaglio (40 ore)} 
+        \item \textbf{Quinta Settimana - Sviluppo e test delle maschere di interfaccia (40 ore)} 
         \begin{itemize}
-            \item Continuazione attività di progettazione;
-            \item Inizio stesura documentazione relativa alla progettazione;
-            \item Validazione con il tutor aziendale dei risultati raggiunti fino a questo punto;
+            \item Sviluppo e test delle maschere di interfaccia di frontend per 
+            le CRUD che richiamano il back-end precedentemente realizzato;
         \end{itemize}
         \item \textbf{Sesta Settimana - Codifica (40 ore)} 
         \begin{itemize}
-            \item Inizio attività di codifica del back-end della piattaforma;
-            \item Test di unità per il back-end della piattaforma;
-            \item Inizio attività di codifica del front-end della piattaforma;
-            \item Test di unità per il front-end della piattaforma;
+            \item Sviluppo della parte main del gioco (gestione della partita) sia per la
+            parte di back end che front end;
         \end{itemize}
         \item \textbf{Settima Settimana - Conclusione della codifica (40 ore)} 
         \begin{itemize}
-            \item Conclusione attività di codifica del back-end della piattaforma;
-            \item Conclusione attività di codifica del front-end della piattaforma;
-            \item Conclusione test di unità per il back-end e front-end della piattaforma;
-            \item Inizio attività di collaudo della piattaforma;
+            \item Conclusione sviluppi e loro integrazione;
         \end{itemize}
         \item \textbf{Ottava Settimana - Conclusione (40 ore)} 
         \begin{itemize}
-            \item Completamento stesura del documento di Specifica Tecnica;
+            \item Stesura del documento di Specifica Tecnica;
             \item Ultimo incontro di validazione degli artefatti con il tutor aziendale;
         \end{itemize}
     \end{itemize}
@@ -98,19 +100,17 @@
 \newcommand{\totaleOre}{312}
 
 \newcommand{\obiettiviObbligatori}{
-	 \item \underline{\textit{O01}}: primo obiettivo;
-	 \item \underline{\textit{O02}}: secondo obiettivo;
-	 \item \underline{\textit{O03}}: terzo obiettivo;
-	 
+	 \item \underline{\textit{O01}}: L'applicativo viene sviluppato come web app rensponsive;
+	 \item \underline{\textit{O02}}: L'applicativo utilizza Angular per il frontend e Spring per il backend;
+	 \item \underline{\textit{O03}}: L'applicativo risponde alle specifiche di progetto redatte nelle prime fasi del percorso;
+	 \item \underline{\textit{O04}}: Studio delle tecnologie Angular e Spring.
 }
 
 \newcommand{\obiettiviDesiderabili}{
-	 \item \underline{\textit{D01}}: primo obiettivo;
-	 \item \underline{\textit{D02}}: secondo obiettivo;
+	 \item \underline{\textit{D01}}: Containerizzazione di almeno una parte tra backend e frontend del progetto;
+	 \item \underline{\textit{D02}}: Integrazione dello studente all'interno del gruppo di lavoro aziendale;
 }
 
 \newcommand{\obiettiviFacoltativi}{
-	 \item \underline{\textit{F01}}: primo obiettivo;
-	 \item \underline{\textit{F02}}: secondo obiettivo;
-	 \item \underline{\textit{F03}}: terzo obiettivo;
+	 \item \underline{\textit{F01}}: Containerizzazione di tutte le parti del progetto.;
 }

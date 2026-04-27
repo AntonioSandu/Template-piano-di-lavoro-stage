@@ -1,74 +1,114 @@
 
 % Tabella da personalizzare in base alle ore delle attività
 
-\begin{tabularx}{\textwidth}{|c|X|}
+\begin{longtable}{|c|p{0.75\textwidth}|}
 	\hline
-	\textbf{Durata in ore} & \textbf{Descrizione dell'attività} \\\hline
-
-    \textbf{4} & \textbf{Incontro iniziale e discussione dei requisiti e richieste del sistema} \\ \hline
-	
-	\textbf{60} & \textbf{Formazione sui framework frontend} \\ \hdashline
-    \multirow{3}{0cm}\\ 
-    \textit{20} & 
-    \textit{Studio autonomo di Angular} \\
-    \textit{20} & 
-    \textit{Studio autonomo di React} \\
-    \textit{20} & 
-    \textit{Studio autonomo di Spring Java} \\
+    \textbf{Durata in ore} & \textbf{Descrizione dell'attività} \\ 
     \hline
-    
-    \textbf{3} & \textbf{Allineamento sui risultati raggiunti con tutor aziendale} \\ \hline 
+    \endfirsthead
 
+    \hline
+    \textbf{Durata in ore} & \textbf{Descrizione dell'attività} \\ 
+    \hline
+    \endhead
 
-    \textbf{35} & \textbf{Definizione requisiti} \\ \hdashline 
-    \multirow{3}{0cm}\\ 
-    \textit{20} & 
-    \textit{Definizione dei requisiti obbligatori} \\
-    \textit{10} & 
-    \textit{Definizione dei requisiti desiderabili} \\
+    \textbf{8} & \textbf{Incontro iniziale e discussione dei requisiti e relative richieste del progetto} \\ \hdashline
+    \textit{3} & 
+    \textit{Incontro iniziale con persone coinvolte nel progetto} \\
     \textit{5} & 
-    \textit{Definizione dei requsiti facoltativi} \\
+    \textit{Discussione requisiti e richieste relative al progetto da sviluppare} \\
     \hline
 
-    \textbf{32} & \textbf{Stesura documentazione relativa all'attività di analisi dei requisiti} \\ \hline
-
-    \textbf{3} & \textbf{Allineamento sui risultati raggiunti con tutor aziendale} \\ \hline
-
-    \textbf{32} & \textbf{Definizione architettura di riferimento} \\ \hdashline 
-    \multirow{3}{0cm}\\ 
-    \textit{16} & 
-    \textit{Analisi del problema e del dominio applicativo} \\
-    \textit{16} & 
-    \textit{Progettazione della piattaforma} \\
+	\textbf{24} & \textbf{Ripasso teorico} \\ \hdashline
+    \textit{8} & 
+    \textit{Ripasso di Java Standard Edition e tool di sviluppo} \\
+    \textit{4} & 
+    \textit{Ripasso dei principi SOLID e CleanCode} \\
+    \textit{12} & 
+    \textit{Studio teorico dell'architettura a microservizi con pro e contro} \\
     \hline
-
-    \textbf{40} & \textbf{Stesura documentazione relativa all'attività di progettazione (Specifica Tecnica)} \\ \hline 
     
-    \textbf{3} & \textbf{Allineamento sui risultati raggiunti con tutor aziendale} \\ \hline
+    \textbf{40} & \textbf{Autoformazione Back end} \\ \hdashline
+    \textit{9} & 
+    \textit{Studio di Spring Core/Spring Boot} \\
+    \textit{9} & 
+    \textit{Studio di ORM: Spring Data JPA} \\
+    \textit{8} & 
+    \textit{Studio di servizi REST e framework Data REST} \\
+    \textit{12} & 
+    \textit{Realizzazione mini prototipo di progetto SpringBoot con endpoint REST} \\
+    \textit{2} & 
+    \textit{Allineamento con il tutor aziendale sui risultati raggiunti} \\
+    \hline
     
-    \textbf{60} & \textbf{Codifica e Test}  \\ \hdashline 
-    \multirow{4}{0cm}\\ 
-    \textit{20} & 
-    \textit{Codifica del back-end della piattaforma} \\
-    \textit{20} & 
-    \textit{Codifica del front-end della piattaforma} \\
-    \textit{10} & 
-    \textit{Test di unità del back-end della piattaforma} \\
-    \textit{10} & 
-    \textit{Test di unità del front-end della piattaforma} \\
+    \textbf{40} & \textbf{Autoformazione Front end} \\ \hdashline
+    \textit{6} & 
+    \textit{Ripasso linguaggio Javascript} \\
+    \textit{8} & 
+    \textit{Studio linguaggio Typescript} \\
+    \textit{8} & 
+    \textit{Studio piattaforma NodeJS e AngularCLI} \\
+    \textit{8} & 
+    \textit{Studio framework Angular} \\
+    \textit{8} & 
+    \textit{Implementazione di mini prototipo di maschera in Angular con chiamata al back-end} \\
+    \textit{2} & 
+    \textit{Allineamento con il tutor aziendale sui risultati raggiunti} \\
     \hline
 
-    \textbf{40} & \textbf{Collaudo e validazione finale}  \\ \hdashline
-    \multirow{3}{0cm}\\
-    \textit{24} &
-    \textit{Collaudo della piattaforma e validazione del funzionamento} \\
-    \textit{12}&
-    \textit{Debugging} \\
+    \textbf{40} & \textbf{Progettazione architetturale e Sviluppo CRUD Back end} \\ \hdashline 
+    \textit{15} & 
+    \textit{Progettazione architetturale} \\
+    \textit{7} & 
+    \textit{Definizione delle entità da realizzare} \\
+    \textit{10} & 
+    \textit{Sviluppo API REST del back-end dei servizi per CRUD di gestione utenti e partite} \\
+    \textit{6} & 
+    \textit{Test di tali servizi} \\
+    \textit{2} & 
+    \textit{Allineamento con il tutor aziendale sui risultati raggiunti} \\
+    \hline
+
+    \textbf{40} & \textbf{Sviluppo e test delle maschere di interfaccia Front end} \\ \hdashline 
+    \textit{30} & 
+    \textit{Sviluppo delle maschere di interfaccia di frontend per le CRUD che richiamano il backend} \\
+    \textit{8} & 
+    \textit{Test di tali maschere} \\
+    \textit{2} & 
+    \textit{Allineamento con il tutor aziendale sui risultati raggiunti} \\
+    \hline
+
+    \textbf{40} & \textbf{Codifica parte centrale del gioco} \\ \hdashline 
+    \textit{19} & 
+    \textit{Sviluppo della gestione della partita lato Back end} \\
+    \textit{19} & 
+    \textit{Sviluppo della gestione della partita lato Front end} \\
+    \textit{2} & 
+    \textit{Allineamento con il tutor aziendale sui risultati raggiunti} \\
+    \hline
+    
+    \pagebreak
+    \textbf{40} & \textbf{Conclusione codifica e Integrazione}  \\ \hdashline 
+    \textit{10} & 
+    \textit{Conclusione della codifica lato Back end} \\
+    \textit{10} & 
+    \textit{Conclusione della codifica lato Front end} \\
+    \textit{18} & 
+    \textit{Integrazione e collaudo del sistema} \\
+    \textit{2} & 
+    \textit{Allineamento con il tutor aziendale sui risultati raggiunti} \\
+    \hline
+
+    \textbf{40} & \textbf{Specifica Tecnica e Validazione Finale}  \\ \hdashline
+    \textit{32} &
+    \textit{Stesura del documento di Specifica Tecnica} \\
     \textit{4} &
-    \textit{Validazione finale con il tutor aziendale} \\
+    \textit{Verifica finale degli artefatti ed eventuali modifiche} \\
+    \textit{4} &
+    \textit{Validazione finale degli artefatti con il tutor aziendale} \\
     \hline
 	
 	\textbf{Totale ore} & \multicolumn{1}{|c|}{\textbf{\totaleOre}} \\\hline
 	
 	
-\end{tabularx}
+\end{longtable}
